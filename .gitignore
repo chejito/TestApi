@@ -1,0 +1,29 @@
+# Build outputs
+bin/
+obj/
+out/
+publish/
+
+# Test results and coverage
+TestResults/
+coverage/
+coverage-results/
+*.coverage
+*.coveragexml
+
+# User-specific files
+*.user
+*.rsuser
+*.suo
+
+# IDEs
+.vs/
+.idea/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Local tooling
+.codex
+.codex/
