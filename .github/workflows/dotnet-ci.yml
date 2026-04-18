@@ -3,11 +3,7 @@
 
 name: .NET
 
-on:
-  push:
-    branches: [ "master" ]
-  pull_request:
-    branches: [ "master" ]
+on:  [push]
 
 jobs:
   build:
@@ -26,3 +22,5 @@ jobs:
       run: dotnet build --no-restore
     - name: Test
       run: dotnet test --no-build --verbosity normal
+    - name: Docker image build
+      run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
